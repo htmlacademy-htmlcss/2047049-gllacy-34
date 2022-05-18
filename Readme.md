@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Кирилл Миньков](https://up.htmlacademy.ru/htmlcss/34/user/2047049).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
