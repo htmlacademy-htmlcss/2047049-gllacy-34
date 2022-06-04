@@ -1,0 +1,353 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/inter-400.woff2) format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/inter-700.woff2) format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url(fonts/inter-900.woff2) format(woff2);
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+
+    background-color: #FEAFC3;
+    color: #2D3440;
+}
+
+.nav-link {
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.nav-phone {
+    font-weight: 700;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.order-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.order-description {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.order-button,
+.gift-button,
+.pagination-show-more {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.bullets,
+.social-media {
+    display: flex;
+}
+
+.telegram-item {
+    background-image: url(../images/telegram.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.youtube-item {
+    background-image: url(../images/youtube.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.vk-item {
+    background-image: url(../images/vk.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.bullet-1,
+.bullet-2,
+.bullet-3{
+    width: 12px; 
+    height: 12px;
+    background: #FCFCFC;
+    border-radius: 50%;
+}
+
+.section-title{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.gift-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.gift-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.gift-description {
+    display: flex;
+    background: #FF7799;
+    border-radius: 16px;
+}
+
+.product-card-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.product-card-description {
+    color: #565C66;  
+}
+
+.product-card-price {
+    font-size: 20px;
+    line-height: 24px
+}
+
+.advantages {
+    background: url(../images/waffle.png) no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.advantages-container {
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.contacts-subtitle,
+.advantages-description {
+    color: #565C66;
+}
+
+.misc-container {
+    display: flex;
+}
+
+aside p{    
+    line-height: 20px;
+    color: #565C66;
+}
+
+.blog-link{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+aside {
+    background: url(../images/aside-underlay.png) no-repeat;
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.subscribe {
+    background: url(../images/subscribe-underlay.png) no-repeat;
+    background-size: 100% auto;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.subscribe-form {
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.delivery-descriprion,
+.subscribe-form p {
+    color: #565C66;
+}
+
+
+.delivery {
+    background: url(../images/delivery-underlay.png) no-repeat;
+    background-size: 100% auto;
+    border-radius: 16px;
+}
+
+.delivery-form {
+    background-color: #FCFCFC;
+    border-radius: 8px;
+}
+
+.form-label{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.subscribe-button,
+.delivery-button,
+.button-feedback {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FCFCFC;
+    background-color: #FF2F64;
+    text-decoration: none;
+}
+
+.feedback {
+    background: url(../images/feedback-underlay.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 16px;
+}
+
+.feedback-contacts {
+    background: #FCFCFC;
+    border-radius: 8px;
+    width: 343px;
+    height: 364px;
+}
+
+.contacts-schedule {
+    font-size: 14px;
+    line-height: 20px;
+    color: #565C66;
+}
+
+.contacts-address,
+.contacts-phone {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.ref-list {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ref-list li a {
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.about-text {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.about-text a {
+    color:#2D3440
+}
+
+/* стили каталога */
+
+.breadcrumbs-item a {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none
+}
+
+.breadcrumbs-item .breadcrumbs-link-3 {
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    display: flex;
+    gap: 11px;
+}
+
+.sort-section {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sorting-options {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.apply-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.pagination-link {
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none;
+}
+
+.product-card-image {
+    border-radius: 50%;
+}
+
+header,
+main {
+    margin-right: 98px;
+    margin-left: 98px;
+    width: 1170px;
+}
+
+ul {
+    list-style-type: none; 
+}
