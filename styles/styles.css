@@ -29,6 +29,9 @@ body {
 
     background-color: #FEAFC3;
     color: #2D3440;
+
+    width: 1170px;
+    margin: 0 auto;
 }
 
 .nav-link {
@@ -68,7 +71,7 @@ body {
 .order-button,
 .gift-button,
 .pagination-show-more {
-    font-family: "Inter", sans-serif;
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -81,34 +84,34 @@ body {
     display: flex;
 }
 
-.telegram-item {
-    background-image: url(../images/telegram.svg);
+.social-item {
     width: 24px;
     height: 24px;
+}
+
+.telegram-item {
+    background-image: url(../images/telegram.svg);
+    
 }
 
 .youtube-item {
     background-image: url(../images/youtube.svg);
-    width: 24px;
-    height: 24px;
 }
 
 .vk-item {
     background-image: url(../images/vk.svg);
-    width: 24px;
-    height: 24px;
 }
 
 .bullet-1,
 .bullet-2,
-.bullet-3{
+.bullet-3 {
     width: 12px; 
     height: 12px;
     background: #FCFCFC;
     border-radius: 50%;
 }
 
-.section-title{
+.section-title {
     font-weight: 900;
     font-size: 32px;
     line-height: 46px;
@@ -134,7 +137,7 @@ body {
     border-radius: 16px;
 }
 
-.product-card-link{
+.product-card-link {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -176,7 +179,7 @@ body {
     display: flex;
 }
 
-aside p{    
+.blog-content p {    
     line-height: 20px;
     color: #565C66;
 }
@@ -189,7 +192,7 @@ aside p{
     text-decoration: none;
 }
 
-aside {
+.blog-content {
     background: url(../images/aside-underlay.png) no-repeat;
     background-size: 100% auto;
     border-radius: 16px;
@@ -224,15 +227,15 @@ aside {
     border-radius: 8px;
 }
 
-.form-label{
+.form-label {
     font-weight: 700;
-    font-size: 16px;
     line-height: 20px;
 }
 
 .subscribe-button,
 .delivery-button,
 .button-feedback {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -275,7 +278,7 @@ aside {
     line-height: 20px;
 }
 
-.ref-list li a {
+.ref-item a {
     color: #2D3440;
     text-decoration: none;
 }
@@ -314,7 +317,7 @@ aside {
 }
 
 .sorting-options {
-    font-family: 'Inter';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -323,7 +326,7 @@ aside {
 }
 
 .apply-button {
-    font-family: 'Inter';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -341,11 +344,11 @@ aside {
     border-radius: 50%;
 }
 
-header,
-main {
-    margin-right: 98px;
-    margin-left: 98px;
-    width: 1170px;
+.text-area::placeholder {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B9B9B9;
 }
 
 ul {
