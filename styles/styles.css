@@ -802,6 +802,7 @@ body {
   height: 76px;
 }
 
+.ref-item:first-child,
 .ref-item:nth-child(odd) {
   display: flex;
   gap: 9px;
@@ -812,7 +813,7 @@ body {
   content: url(../images/heart.svg);
 }
 
-.ref-item:nth-child(odd)::before{
+.ref-item:nth-child(2n+3)::before{
   content: "1";
   color: #FEAFC3;
   width: 14px;
