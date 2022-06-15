@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин мороженого Glaccy-shop</title>
     <link href="styles/styles.css" rel="stylesheet">
-    <!-- <link href="styles/outlines.css" rel="stylesheet"> -->
+    <link href="styles/outlines.css" rel="stylesheet">
   </head>
 
   <body>
@@ -41,6 +41,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
+              <img src="images/login.svg" width="16" height="16" alt="">
               <span>
                 Вход
               </span>
@@ -60,42 +61,59 @@
       <h1 class="visually-hidden">Интернет-магазин мороженого Glaccy-shop</h1>
       <section class="order-slider">
         <h2 class="visually-hidden">Выбери наши хиты</h2>
-        <button class="arrow arrow-back" type="button">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <ul class="order-list">
-          <li class="order-item">
-            <h1 class="order-title">Нежный пломбир с клубничным джемом</h1>
-            <p class="order-description">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом
-              – это идеальный десерт для всей семьи.</p>
-            <img class="order-image" src="images/ice-cream-firstslide.png" alt="Рожок с клубничным джемом" width="306"
-              height="507">
-          </li>
-          <li class="order-item">
-            <h1 class="order-title">Сливочное мороженое со вкусом банана</h1>
-            <p class="order-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
-              даже в самый жаркий летний день.</p>
-            <img class="order-image" src="images/ice-cream-secondslide.png" alt="Банановый рожок" width="306"
-              height="507">
-          </li>
-          <li class="order-item">
-            <h1 class="order-title">Карамельный пломбир с маршмеллоу</h1>
-            <p class="order-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
-              сердца сладкоежек всех возрастов.</p>
-            <img class="order-image" src="images/ice-cream-thirdslide.png" alt="Рожок с маршмеллоу" width="306"
-              height="507">
-          </li>
-        </ul>
-        <button class="order-button" type="button">Заказать</button>
-        <button class="arrow arrow-forward" type="button">
-          <span class="visually-hidden">Вперёд</span>
-        </button>
-        <button class="second-slide" type="button">
-          <span class="visually-hidden">Второй слайд</span>
-        </button>
-        <button class="third-slide" type="button">
-          <span class="visually-hidden">Третий слайд</span>
-        </button>
+        <div class="order-slider-description-wrapper">
+          <ul class="slider-title-list">
+            <li class="slider-title-selected">
+              <h1 class="order-title">Нежный пломбир <br> с клубничным джемом</h1>
+            </li>
+            <li>
+              <h1 class="order-title visually-hidden">Сливочное мороженое со вкусом банана</h1>
+            </li>
+            <li>
+              <h1 class="order-title visually-hidden">Карамельный пломбир с маршмеллоу</h1>
+            </li>
+          </ul>
+          <ul class="slider-description-list">
+            <li class="slider-description-selected">
+              <p class="order-description">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным
+                джемом – это идеальный десерт для всей семьи.</p>
+            </li>
+            <li>
+              <p class="order-description visually-hidden">Сливочное мороженое с ярким банановым вкусом подарит вам
+                свежесть и
+                наслаждение даже в самый жаркий летний день.</p>
+            </li>
+            <li>
+              <p class="order-description visually-hidden">Необычный сладкий десерт с карамельным топпингом и кусочками
+                зефира завоюет
+                сердца сладкоежек всех возрастов.</p>
+            </li>
+          </ul>
+          <button class="order-button" type="button">Заказать</button>
+        </div>
+        <div class="order-slider-selector-wrapper">
+          <button class="arrow arrow-back" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <div class="order-image-wrapper-selected">
+            <div class="order-image-background-selected"></div>
+            <img class="order-image order-image-selected" src="images/ice-cream-firstslide.png"
+              alt="Рожок с клубничным джемом" width="306" height="507">
+          </div>
+          <button class="arrow arrow-forward" type="button">
+            <span class="visually-hidden">Вперёд</span>
+          </button>
+          <div class="order-image-wrapper">
+            <div class="order-image-background"></div>
+            <img class="order-image order-image-notselected" src="images/ice-cream-secondslide.png"
+              alt="Банановый рожок" width="306" height="507">
+          </div>
+          <div class="order-image-wrapper">
+            <div class="order-image-background"></div>
+            <img class="order-image order-image-notselected" src="images/ice-cream-thirdslide.png"
+              alt="Рожок с маршмеллоу" width="306" height="507">
+          </div>
+        </div>
         <div class="switchers-container">
           <ul class="bullets">
             <li class="bullet-1">
@@ -122,21 +140,21 @@
           </ul>
           <ul class="social-media">
             <li class="telegram-item social-item">
-              <a class="telegram-link" href="https://t.me/htmlacademy">
+              <a class="telegram-link social-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Ссылка в телеграм-канал
                 </span>
               </a>
             </li>
             <li class="vk-item social-item">
-              <a class="vk-link" href="https://vk.com/htmlacademy">
+              <a class="vk-link social-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">
                   Ссылка на паблик ВКонтакте
                 </span>
               </a>
             </li>
             <li class="youtube-item social-item">
-              <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="youtube-link social-link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">
                   Ссылка на канал Youtube
                 </span>
@@ -172,6 +190,7 @@
       <section class="popular-products">
         <ul class="product-list">
           <li class="product-card">
+            <div class="product-card-underlay"></div>
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/goodcard-1.jpg" alt="" width="168" height="168">
               <h4 class="product-card-title">Малинка</h4>
@@ -185,6 +204,7 @@
             </div>
           </li>
           <li class="product-card">
+            <div class="product-card-underlay"></div>
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/goodcard-2.jpg" alt="" width="168" height="168">
               <h4 class="product-card-title">Фисташка</h4>
@@ -198,6 +218,7 @@
             </div>
           </li>
           <li class="product-card">
+            <div class="product-card-underlay"></div>
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/goodcard-3.jpg" alt="" width="168" height="168">
               <h4 class="product-card-title">Черника</h4>
@@ -211,6 +232,7 @@
             </div>
           </li>
           <li class="product-card">
+            <div class="product-card-underlay"></div>
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/goodcard-4.jpg" alt="" width="168" height="168">
               <h4 class="product-card-title">Бабл-гам</h4>
@@ -241,8 +263,6 @@
                 <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
                   качества. Все ингредиенты и добавки произведены из натурального сырья..</p>
               </li>
-            </ul>
-            <ul class="advantages-list">
               <li class="advantages-item">
                 <img class="advantages-icon" src="images/cow.svg" width="48" height="48">
                 <p class="advantages-description">Закупка ингредиентов производится только у проверенных фермерских
@@ -280,7 +300,7 @@
       <article class="delivery">
         <div class="delivery-container">
           <h2 class="section-title">Доставка любимого мороженого на дом</h2>
-          <p class="delivery-descriprion">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
+          <p class="delivery-descriprion">Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин?
             Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
         <section class="delivery-window">
@@ -328,23 +348,23 @@
     <!---Подвал-->
     <footer class="page-footer">
       <div class="footer-wrapper">
-        <ul class="social-media">
+        <ul class="social-media footer-social">
           <li class="telegram-item social-item">
-            <a class="telegram-link" href="https://t.me/htmlacademy">
+            <a class="telegram-link social-link" href="https://t.me/htmlacademy">
               <span class="visually-hidden">
                 Ссылка в телеграм-канал
               </span>
             </a>
           </li>
           <li class="vk-item social-item">
-            <a class="vk-link" href="https://vk.com/htmlacademy">
+            <a class="vk-link social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">
                 Ссылка на паблик ВКонтакте
               </span>
             </a>
           </li>
           <li class="youtube-item social-item">
-            <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="youtube-link social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">
                 Ссылка на канал Youtube
               </span>
@@ -352,36 +372,37 @@
           </li>
         </ul>
         <ul class="ref-list">
-          <li>
-            <a class="ref-heart" href="#">
-              <img class="heart-icon" src="images/heart.svg" width="14" height="14" alt="Ставь лайк">
-            </a>
-          </li>
-          <li>
-            <a class="ref-heart" href="#">
-              <img class="heart-icon" src="images/heart.svg" width="0" height="0" alt="Ставь лайк">
-            </a>
-          </li>
           <li class="ref-item">
             <a href="#"><b>Для поставщиков</b></a>
-          </li>
-          <li class="ref-item">
-            <a href="#">О производстве</a>
           </li>
           <li class="ref-item">
             <a href="#">Наши документы</a>
           </li>
           <li class="ref-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="ref-item">
             <a href="#">Экологические стандарты</a>
           </li>
+          <!-- <li class="ref-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="ref-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="ref-item">
+            <a href="#">Наши документы</a>
+          </li> -->
         </ul>
         <ul class="copyright">
+          <li>
           <a href="https://htmlacademy.ru/">
             <img class="htmlacademy-logo" src="images/logo-htmlacademy.svg" alt="Логотип html-academy" width="93"
               height="26">
           </a>
           <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/"><u>.html
                 academy</u></a> © 2021</p>
+          </li>
         </ul>
       </div>
     </footer>
