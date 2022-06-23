@@ -405,17 +405,18 @@ body {
 
 .product-card-image {
   border-radius: 50%;
-  margin-bottom: 16px;
+  position: absolute;
 }
 
 .product-card-underlay {
   width: 270px;
-  height: 281px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #FCFCFC;
   border-radius: 8px;
-  position: absolute;
-  z-index: -1;
   margin-top: 56px;
+  padding-top: 133px;
 }
 
 .product-card-title {
@@ -490,30 +491,24 @@ body {
   align-items: center;
 }
 
-.advantages-list-container {
-  display: flex;
-  justify-content: space-between;
-  width: 1042px;
-  height: 228px;
-}
-
 .advantages-list {
   list-style-type: none;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-bottom: 16px;
 }
 
 .advantages-item:nth-child(odd) {
-  padding-bottom: 40px;
+  padding-left: 40px;
+  margin-right: 32px;
 }
 
 .advantages-item {
   display: flex;
   width: 510px;
-  margin-right: 32px;
+  margin-bottom: 40px;
 }
 
 .advantages-icon {
@@ -769,24 +764,22 @@ body {
   align-self: center;
   margin: 0;
   padding: 0;
-}
-
-.footer-wrapper {
   display: flex;
   justify-content: flex-start;
   padding-top: 44px;
   padding-bottom: 44px;
 }
 
-.footer-wrapper .footer-social {
+
+.page-footer .footer-social {
   margin-right: 323px;
 }
 
-.footer-wrapper .ref-list {
+.page-footer .ref-list {
   margin-right: 190px;
 }
 
-.footer-wrapper ul {
+.page-footer ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -839,12 +832,13 @@ body {
   text-decoration: none
 }
 
-.breadcrumbs-item:last-child {
-  text-decoration: underline;
+.breadcrumbs-item:last-child a {
+  border-bottom: #2D3440 1px solid;
 }
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding: 0;
