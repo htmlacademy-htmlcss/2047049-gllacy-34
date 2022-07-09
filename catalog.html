@@ -19,7 +19,7 @@
             </a>
           </li>
           <li class="current-page-item">
-            <a class="nav-link" href="">Каталог</a>
+            <a class="nav-link">Каталог</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Доставка и оплата</a>
@@ -42,6 +42,18 @@
                 Поиск
               </span>
             </a>
+            <div class="popover popover-search">
+              <button class="popover-close-button button button-light popover-search-button">
+                <svg class="search-icon" width="14" height="14" fill="#2D3440">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.66 6.19a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.44a.67.67 0 1 1-.94.95l-2.45-2.45Z" />
+                </svg>
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <input type="search" class="text-area" placeholder="Поиск по сайту">
+              </div>
+            </div>
           </li>
           <li class="nav-user-item">
             <a class="nav-user-link login-link" href="#">
@@ -53,6 +65,37 @@
                 Вход
               </span>
             </a>
+            <div class="popover popover-login">
+              <button class="popover-close-button button button-light">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="#2D3440">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9 2.52461C9 2.15642 9.29848 1.85794 9.66667 1.85794H12.3333C12.8638 1.85794 13.3725 2.06865 13.7475 2.44373C14.1226 2.8188 14.3333 3.32751 14.3333 3.85794V13.1913C14.3333 13.7217 14.1226 14.2304 13.7475 14.6055C13.3725 14.9806 12.8638 15.1913 12.3333 15.1913H9.66667C9.29848 15.1913 9 14.8928 9 14.5246C9 14.1564 9.29848 13.8579 9.66667 13.8579H12.3333C12.5101 13.8579 12.6797 13.7877 12.8047 13.6627C12.9298 13.5377 13 13.3681 13 13.1913V3.85794C13 3.68113 12.9298 3.51156 12.8047 3.38654C12.6797 3.26151 12.5101 3.19127 12.3333 3.19127H9.66667C9.29848 3.19127 9 2.8928 9 2.52461ZM5.86189 4.71987C6.12224 4.45952 6.54435 4.45952 6.8047 4.71987L10.1338 8.04897C10.1509 8.06579 10.1671 8.08353 10.1824 8.1021C10.2142 8.1409 10.2411 8.18246 10.2628 8.22589C10.3079 8.31575 10.3333 8.41721 10.3333 8.52461C10.3333 8.63323 10.3074 8.73579 10.2613 8.8264C10.241 8.86635 10.2164 8.90469 10.1876 8.94072C10.1708 8.96172 10.1527 8.98169 10.1335 9.0005L6.8047 12.3293C6.54435 12.5897 6.12224 12.5897 5.86189 12.3293C5.60154 12.069 5.60154 11.6469 5.86189 11.3865L8.05715 9.19127H1.66667C1.29848 9.19127 1 8.8928 1 8.52461C1 8.15642 1.29848 7.85794 1.66667 7.85794H8.05715L5.86189 5.66268C5.60154 5.40233 5.60154 4.98022 5.86189 4.71987Z" />
+                </svg>
+                <span>
+                  Вход
+                </span>
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title">Личный кабинет</h2>
+                <form class="popover-login-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <input class="text-area" type="email" name="login-email" placeholder="email@example.com" required>
+                  <input class="text-area" type="password" id="delivery-date" name="delivery-date" placeholder="······"
+                    required>
+                  <div class="popover-login-wrapper">
+                    <input type="submit" class="button-popover-login" value="Войти"></input>
+                    <ul class="popover-login-list">
+                      <li class="popover-login-item">
+                        <a href="#">Забыли пароль?</a>
+                      </li>
+                      <li class="popover-login-item">
+                        <a href="#">Регистрация</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="nav-user-item">
             <a class="nav-user-link cart-link" href="#">
@@ -64,6 +107,72 @@
                 2 товара
               </span>
             </a>
+            <div class="popover popover-cart">
+              <button class="popover-close-button button button-light">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="#2D3440">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.16667 2.10794C0.798477 2.10794 0.5 2.40642 0.5 2.77461C0.5 3.1428 0.798477 3.44127 1.16667 3.44127H2.93794L3.40537 5.77666C3.40821 5.79461 3.41176 5.81232 3.416 5.82976L4.38338 10.6631L4.3835 10.6637C4.46706 11.0837 4.69562 11.4609 5.02921 11.7295C5.36111 11.9967 5.77595 12.1393 6.20183 12.1328H11.8225C12.2484 12.1393 12.6633 11.9967 12.9952 11.7295C13.3289 11.4608 13.5575 11.0833 13.641 10.6631L13.641 10.6631L13.642 10.6581L14.5691 5.79666C14.6063 5.60149 14.5545 5.39989 14.4279 5.24681C14.3012 5.09372 14.1129 5.00511 13.9142 5.00511H4.61072L4.1381 2.64377C4.07574 2.3322 3.80215 2.10794 3.4844 2.10794H1.16667ZM5.69098 10.4024L4.87759 6.33844H13.1084L12.3328 10.4053C12.31 10.5178 12.2485 10.6188 12.1591 10.6909C12.0691 10.7633 11.9565 10.8018 11.841 10.7996L11.841 10.7994H11.8282H6.19614V10.7993L6.18337 10.7996C6.06787 10.8018 5.95528 10.7633 5.8653 10.6909C5.77531 10.6184 5.71368 10.5166 5.69117 10.4033L5.69098 10.4024ZM4.55739 14.3634C4.55739 13.6754 5.1151 13.1177 5.80307 13.1177C6.49105 13.1177 7.04876 13.6754 7.04876 14.3634C7.04876 15.0513 6.49105 15.6091 5.80307 15.6091C5.1151 15.6091 4.55739 15.0513 4.55739 14.3634ZM10.9307 14.3634C10.9307 13.6754 11.4884 13.1177 12.1764 13.1177C12.8644 13.1177 13.4221 13.6754 13.4221 14.3634C13.4221 15.0513 12.8644 15.6091 12.1764 15.6091C11.4884 15.6091 10.9307 15.0513 10.9307 14.3634Z" />
+                </svg>
+                <span>
+                  2 товара
+                </span>
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <img class="cart-item-image" src="images/goodcard-1.jpg" alt="" width="46" height="46">
+                    <div class="cart-item-wrapper">
+                      <p class="cart-item-title">Малинка</p>
+                      <p class="cart-item-calculation">1 кг х 310 ₽</p>
+                    </div>
+                    <p class="cart-item-price">310 ₽</p>
+                    <button type="button" class="cart-item-button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="#2d3440">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <img class="cart-item-image" src="images/goodcard-4.jpg" alt="" width="46" height="46">
+                    <div class="cart-item-wrapper">
+                      <p class="cart-item-title">Бабл-гам</p>
+                      <p class="cart-item-calculation">1,5 кг х 320 ₽</p>
+                    </div>
+                    <p class="cart-item-price">480 ₽</p>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="#2d3440">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-order-wrapper">
+                  <button class="button-cart-order">Оформить заказ</button>
+                  <p class="cart-item-price price-summ">Итого: 790 ₽</p>
+                </div>
+              </div>
+            </div>
+            <div class="popover popover-cart-empty">
+              <button class="popover-close-button button button-light">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="#2D3440">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.16667 2.10794C0.798477 2.10794 0.5 2.40642 0.5 2.77461C0.5 3.1428 0.798477 3.44127 1.16667 3.44127H2.93794L3.40537 5.77666C3.40821 5.79461 3.41176 5.81232 3.416 5.82976L4.38338 10.6631L4.3835 10.6637C4.46706 11.0837 4.69562 11.4609 5.02921 11.7295C5.36111 11.9967 5.77595 12.1393 6.20183 12.1328H11.8225C12.2484 12.1393 12.6633 11.9967 12.9952 11.7295C13.3289 11.4608 13.5575 11.0833 13.641 10.6631L13.641 10.6631L13.642 10.6581L14.5691 5.79666C14.6063 5.60149 14.5545 5.39989 14.4279 5.24681C14.3012 5.09372 14.1129 5.00511 13.9142 5.00511H4.61072L4.1381 2.64377C4.07574 2.3322 3.80215 2.10794 3.4844 2.10794H1.16667ZM5.69098 10.4024L4.87759 6.33844H13.1084L12.3328 10.4053C12.31 10.5178 12.2485 10.6188 12.1591 10.6909C12.0691 10.7633 11.9565 10.8018 11.841 10.7996L11.841 10.7994H11.8282H6.19614V10.7993L6.18337 10.7996C6.06787 10.8018 5.95528 10.7633 5.8653 10.6909C5.77531 10.6184 5.71368 10.5166 5.69117 10.4033L5.69098 10.4024ZM4.55739 14.3634C4.55739 13.6754 5.1151 13.1177 5.80307 13.1177C6.49105 13.1177 7.04876 13.6754 7.04876 14.3634C7.04876 15.0513 6.49105 15.6091 5.80307 15.6091C5.1151 15.6091 4.55739 15.0513 4.55739 14.3634ZM10.9307 14.3634C10.9307 13.6754 11.4884 13.1177 12.1764 13.1177C12.8644 13.1177 13.4221 13.6754 13.4221 14.3634C13.4221 15.0513 12.8644 15.6091 12.1764 15.6091C11.4884 15.6091 10.9307 15.0513 10.9307 14.3634Z" />
+                </svg>
+                <span>
+                  2 товара
+                </span>
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <div class="popover-content">
+                <h2 class="popover-title"><span>Ваша корзина пока<br> пуста</span></h2>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -91,40 +200,57 @@
               <legend class="sorting-title">Сортировка:</legend>
               <select class="sorting-options" name="sorting-selection">
                 <option value="popular">По популярности</option>
-                <option value="cheap">По стоимости (увеличение)</option>
-                <option value="expensive">По стоимости (убывание)</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
               </select>
             </fieldset>
             <fieldset class="prize">
-              <legend class="prize-title">Цена: 100 ₽ – 500 ₽</legend>
-              <input type="range" min="100" max="500" name="prize">
-              <!-- <input type="range" min="100" max="500"> на потом -->
+              <legend class="prize-title">Цена:
+                <input class="range-input" type="number" value="100" name="min-price"> ₽ –
+                <input class="range-input" type="number" value="500" name="max-price"> ₽
+              </legend>
+              <div class="range-scale-wrapper"></div>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <a class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </a>
+                  <a class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </a>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="fat-content">
               <legend class="fat-content-title">Жирность:</legend>
+              <div class="fat-content-list-wrapper"></div>
               <ul class="fat-content-list">
                 <li class="fat-content-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="fat-content" value="0%">
-                    0%
+                  <label class="control-fat">
+                    <input class="visually-hidden control-input" type="radio" name="fat-content" value="0%">
+                    <span class="control-mark-fat"></span>
+                    <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="fat-content-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="fat-content" value="<10%" checked>
-                    до 10%
+                  <label class="control-fat">
+                    <input class="visually-hidden control-input" type="radio" name="fat-content" value="<10%" checked>
+                    <span class="control-mark-fat"></span>
+                    <span class="control-label">до 10%</span>
                   </label>
                 </li>
                 <li class="fat-content-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="fat-content" value="<30%">
-                    до 30%
+                  <label class="control-fat">
+                    <input class="visually-hidden control-input" type="radio" name="fat-content" value="<30%">
+                    <span class="control-mark-fat"></span>
+                    <span class="control-label">до 30%</span>
                   </label>
                 </li>
                 <li class="fat-content-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="fat-content" value=">30%">
-                    выше 30%
+                  <label class="control-fat">
+                    <input class="visually-hidden control-input" type="radio" name="fat-content" value=">30%">
+                    <span class="control-mark-fat"></span>
+                    <span class="control-label">выше 30%</span>
                   </label>
                 </li>
               </ul>
@@ -133,35 +259,41 @@
           <div class="sorting-wrapper">
             <fieldset class="fillers">
               <legend class="fillers-title">Наполнители:</legend>
+              <div class="fillers-list-wrapper"></div>
               <ul class="fillers-list">
                 <li class="fillers-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="chocolate" checked>
-                    шоколадные
+                  <label class="control-fillers">
+                    <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">шоколадные</span>
                   </label>
                 </li>
                 <li class="fillers-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="sugar-sprinkle" checked>
-                    сахарные посыпки
+                  <label class="control-fillers">
+                    <input class="visually-hidden control-input" type="checkbox" name="sugar-sprinkle" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">сахарные посыпки</span>
                   </label>
                 </li>
                 <li class="fillers-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="fruits">
-                    фрукты
+                  <label class="control-fillers">
+                    <input class=" visually-hidden control-input" type="checkbox" name="fruits">
+                    <span class="control-mark"></span>
+                    <span class="control-label">фрукты</span>
                   </label>
                 </li>
                 <li class="fillers-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="syrop">
-                    сиропы
+                  <label class="control-fillers">
+                    <input class=" visually-hidden control-input" type="checkbox" name="syrop">
+                    <span class="control-mark"></span>
+                    <span class="control-label">сиропы</span>
                   </label>
                 </li>
                 <li class="fillers-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="jam">
-                    джемы
+                  <label class="control-fillers">
+                    <input class="visually-hidden control-input" type="checkbox" name="jam">
+                    <span class="control-mark"></span>
+                    <span class="control-label">джемы</span>
                   </label>
                 </li>
               </ul>
