@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/inter-400.woff2);
+  src: url(../fonts/inter-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/inter-700.woff2);
+  src: url(../fonts/inter-700.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 900;
-  src: url(../fonts/inter-900.woff2);
+  src: url(../fonts/inter-900.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -1331,7 +1331,7 @@ body {
 .sort-section {
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: -20px;
+  margin-bottom: 40px;
 }
 
 .sorting-options {
@@ -1380,10 +1380,38 @@ body {
 .fat-content-list,
 .fillers-list {
   list-style-type: none;
-  padding: 9px 24px;
+  padding: 0;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 18px;
+}
+
+.fat-content-list {
+  min-width: 383px;
+  min-height: 38px;
+}
+
+.fillers-list {
+  min-width: 604px;
+  min-height: 40px;
+}
+
+.fillers-list li:first-child,
+.fat-content-list li:first-child {
+  padding-left: 24px;
+}
+
+.fillers-list li:last-child,
+.fat-content-list li:last-child {
+  padding-right: 24px;
+}
+
+.fillers-list li:not(:last-child),
+.fat-content-list li:not(:last-child) {
+  margin-right: 16px;
 }
 
 .sorting-wrapper {
@@ -1404,7 +1432,7 @@ body {
   width: 100%;
   min-height: 38px;
   position: relative;
-  top: -5px;
+  top: 12px;
   padding: 8px 52px;
   background-color: rgba(252, 252, 252, 0.3);
   border: 2px solid #fcfcfc;
@@ -1441,20 +1469,8 @@ body {
   width: 196px;
 }
 
-.fat-content {
-  width: 383px;
-}
-
-.fat-content-list-wrapper {
-  width: 383px;
-  height: 36px;
-  background: rgba(252, 252, 252, 0.3);
-  border-radius: 18px;
-}
-
 .control-fat {
   position: relative;
-  top: -37px;
   display: block;
   padding-left: 24px;
   cursor: pointer;
@@ -1482,10 +1498,12 @@ body {
   content: "";
 }
 
+.control-input:focus + .control-mark-fat,
 .control-fat:hover .control-mark-fat {
   border: 1px solid #fcfcfc;
 }
 
+.control-input[type="radio"]:checked:focus + .control-mark-fat::before,
 .control-input[type="radio"]:checked:hover + .control-mark-fat::before {
   position: absolute;
   top: 4.5px;
@@ -1513,21 +1531,8 @@ body {
   content: "";
 }
 
-.fillers {
-  width: 604px;
-  position: relative;
-}
-
-.fillers-list-wrapper {
-  width: 604px;
-  height: 40px;
-  background: rgba(252, 252, 252, 0.3);
-  border-radius: 18px;
-}
-
 .control-fillers {
   position: relative;
-  top: -40px;
   display: block;
   padding-left: 24px;
   cursor: pointer;
@@ -1544,6 +1549,7 @@ body {
   box-sizing: border-box;
 }
 
+.control-input[type="checkbox"]:focus + .control-mark,
 .control-fillers:hover .control-mark {
   border-color: #fcfcfc;
 }
@@ -1560,6 +1566,7 @@ body {
   border: none;
 }
 
+.control-input[type="checkbox"]:checked:focus + .control-mark,
 .control-input[type="checkbox"]:checked:hover + .control-mark {
   position: absolute;
   width: 16px;
@@ -1591,7 +1598,7 @@ body {
 
 .range-input {
   width: 30px;
-  padding: 0 1px;
+  padding: 0 2px;
   font-family: Inter, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -1638,7 +1645,7 @@ body {
 
 .range-toggle {
   position: absolute;
-  display: block;
+  /* display: block; */
   padding: 2px;
   width: 16x;
   height: 16px;
@@ -1646,7 +1653,7 @@ body {
   cursor: pointer;
   box-sizing: border-box;
   border: 6px solid #2D3440;
-  background-color: #fcfcfc
+  background-color: #fcfcfc;
 }
 
 .range-toggle:hover {
@@ -1660,9 +1667,10 @@ body {
 }
 
 .range-toggle:focus {
+  background-color: #2d3440;
   border: 6px solid #fcfcfc;
-  background-color: #2D3440;
-  outline: 2px solid #2D3440;
+  box-shadow: 0 0 0 2px #2d3440;
+  outline: none;
 }
 
 .toggle-min {
@@ -1681,13 +1689,13 @@ body {
 
 .sorting-wrapper:last-child {
   position: relative;
-  top: -22px
+  top: -2px
 }
 
 /* внутренний футер */
 .inner-footer {
   display: flex;
-  padding-top:  37px;
+  padding-top: 35px;
   margin-bottom: 80px;
 }
 
